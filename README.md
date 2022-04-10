@@ -47,5 +47,42 @@ The loading component after submitting the handle event shows the loading. It no
 
 ## Download Service
 
-***Path: /src/app/_service/download.service.ts***
 The download service contains  **Get all data file and Download file methods** for managing, It acts as the interface between the Angular application and the backend API.
+
+ - **Backend API**
+We are create a sample project **ApiDownFile** . In controller we have two function **Get() method** and **DownloadFiles() method** 
+We are creating a sample project ApiDownFile. In controller we have two function Get() method and DownloadFiles() method.
+
+**Get() method** lets me get all data and it created a data dummy. Model DownloadFile contains many fields Id, Name, Extension, Type.
+
+**DownloadFiles() method** handle download return byte.
+
+![enter image description here](https://lh3.googleusercontent.com/T7S-SuGwg3B5NdZF2S3c8TPPyGUgEvkHb1y9D3kwga4M0X-5A-NG9XSRrjJYeYnlo-5yIwG2OGHZPdM3U4ShM4TYVzFX9ti0YUcZ1YlzD-zXcponltMh_lwc4uVB3jqDEW9L4JCKCZW7OiDp5k3kYZs7Sw48l1IzODWiG66UIUpxT1P07_XoKshMTmuhS6hCvMuTJh9Ycrqk2pk_qVH9HzUqdDVb_3iZt0uywYCNizZXDq5l6gwIeS49OQuPn9FKMe1mMnBoC9kEipfBT-aEt_tdH_bRPviWrYNZOnhj7H0EJJBvWZSYqrnaIKs3-LJrnti6dLsUEEpzBrcetXajk-LVmmQaofO7fvS7oMxHH_rcpH7gwWeDsa_BacUhfh4G_qPS0Op3raALZmkB-Pj5Ah6P8EVyp1S9lX82oez-OV3fCyKMl5uUluggoyARQzBNhT-fKGWO4ZUzWKjc4lR9G0A6d0D74S6jqCL2l4tze62v0a6gu6j5c0AyYz3kfhDH7pmAw0m3mSZRGIlENom-Luwqdkz5RZb7DIOMWWmju4kQR5kPI7-UqRsq1zfic10ZOj_sx6jYDvNMrt9go56aVxYwdTJHYfA-O9XgsRKC9W61yNX0SxRP_PgrBvKaqetCQzu21nGc5wcB8RTD4xFi0DwxGKfYf6sNNvsZR0aDXQghgz8FNtToX7OYWpoaLbxgt71TTMDX42mU3FQFP3owJXtrG9yJeKQBLYEkdKZ7c-TLNTcb5SRC1DGMsgrZuw=w836-h384-no?authuser=0)
+
+ - **FrontEnd API**
+***Path: /src/app/_service/download.service.ts***
+The user service contains a standard set of (**getAllFile() and download()**) methods for managing users, it acts as the interface between the Angular application and the backend api.
+![enter image description here](https://lh3.googleusercontent.com/yRiLw7pqEvLvC22r6Ou4IUmSs_BGYllmxajoiNHWJQ99Sb_iQ0qeKwesuMn_KhZVrBEahEfIdysoqpSfWYN8hQN2vkqiKHgxWRw70CcodKhp5FAAbCASY_1NdsED_ScC2U0YgOWVT9sE-OCVIabzCA5A9R4hi4OnEc9xtqHBVfmRo5l8tmSusmzbEM_CsSkxlAlQZmy6fyS-_PmpRVP0FYJsfkToy_aJrM8fwxCkGewyxaCoayYQT-DTpI0pZG36ZfNw-3M-2VB-pwRi2norjvIj1G0xH6uC3UnbWvD2fhaJXMKdJPnoNI6mmgLBpqnXwIiDIJjzrfH6Xx4eJP_QVG6HVfs7CQDScaBsgtB_X8Vl5phkrdKBo6-hL_SIg6O_r56RGw-hec7Dex4mWs9bUZqeOGsT3B0DEv0tdeuG7ms78qheEiYsRapMvbxhxz12gRDGNbcfkMYlC3k8eCcklmb0DG00jcVjeyjG2W-Zv_WCu2iEMogYaQMx7HvSSkwUVVB2IjalMLHpNdkSCrYsfmQFV4p4BkHRpKY2auERNw5dobAFGInM36lhesOq2xG5h7zSQyrqvKpN5EGQiJiJTwChYgK3CiZGhxXdi1pe1AOinS0I5flNtByIz_4uiA30KoH_M4MOwqaP8G-mPkWo7xHZsLOs8Kfga6lbi10esbsVOIYKf0sNJW55QIqRfV-_IVoY1tcbhVg5moHyxTeCttdog4ST5zwX2Q-QqGF9KwS8DZBnAGSG3pALsfGdxw=w582-h386-no?authuser=0)
+
+**This.apiService.postFile() and CustomApiService.downLoadFile()** 
+**This.apiService.postFile()** call api return byte.
+
+![enter image description here](https://lh3.googleusercontent.com/Qq0fpYm2A_vK735RorY77kmtwHnABkgW6XuR6mYPQOGE_qC-de6KIK2lpr6r295tU7_Mz6O2YNGXpCrJQlUkte4k3Qs13pFALriEzJPozz6K0rUEoOlJ23gAkIHH2YjryDKr7-Y-vCMe1zzYytOjzEadSlXhkfez6Ka6lNH7iboOiG7WK7NxCLOs_KcNFZUO1eEw6JWPFC3-oC9V6jNqVx179x0CqvgwF3Bx1b39Yzpt-Mc83g7bguK2ZR0W7LNcJ1rz1b0h4ZEKh51LinVvPZWFKFBpV9oDUKoDjLY6b_7OI3CcVlZeMUX2XhfwvwgpDQa3WHgstPdwUpURGa0F3vtu5tIYMLu_kLtOqXdJwKaqR7FPqpO_Dk-1pdHD9zGygzIiAmr5DE5JvvjCWyWijCu2Z56H2CgiuKnjOs-5wJcpQ4HOSubzWQ4-UtFs5csuCEqHU6BWCsXKRDr-E-GFajEHU6pHPnSXJ3PjvtU30opQ5tLVHj0nCK-aPPswPL_PZsFgMgQfqj5w3Uz3zWE71iQ7sxINGc2JruWBBYZrWz_6clkbJRVbX7xkqz5gNtZZixPHoueotacXoy0zYezXVUwzwFw6t6BhIZW-qQTN6uJmPksNZbcv3xl1UIfU1TZTy5e_RlD98ongBO94k3I-WzLb89lmLx_GQMVDl8ApLHeDqNdrjYF2L8Jt-jLlptLJR7iysLTeg5ilJRurivf5IGq5jW75FfClIO-kfMk_KU1ulKNkUUeBawpyCpt0cg=w540-h384-no?authuser=0)
+
+**Blob** :
+
+While  `ArrayBuffer`,  `Uint8Array`  and other  `BufferSource`  are “binary data”, a  Blob represents “binary data with type”.
+
+That makes Blobs convenient for upload/download operations, that are so common in the browser,can work with  `Blob`  natively, as well as with other binary types.
+
+We can easily convert between  `Blob`  and low-level binary data types:
+
+-   We can make a  `Blob`  from a typed array using  `new Blob(...)`  constructor.
+-   We can get back  `ArrayBuffer`  from a Blob using  `blob.arrayBuffer()`, and then create a view over it for low-level binary processing.
+
+Conversion streams are very useful when we need to handle large blob. You can easily create a  `ReadableStream`  from a blob. The  `Blob`  interface’s  `stream()`  method returns a  `ReadableStream`  which upon reading returns the data contained within the blob.
+
+**Finaly**,  
+saveFile(blob, fileName) method : We are installing **npm i file-saver** for application angular. after install use  import { saveAs } from 'file-saver'.blobContent file content as a Blob and fileName name file should be saved as.
+
+
