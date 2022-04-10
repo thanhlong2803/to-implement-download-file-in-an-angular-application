@@ -1,6 +1,6 @@
 
 
-# Download-many-file-in-angular
+# Download many file in angular
 Angular - Download many file in angular Example
 
  - **The project** and **structure** of the example mostly follows the best practice and improve codes.
@@ -71,7 +71,7 @@ The user service contains a standard set of (**getAllFile() and download()**) me
 
 **Blob** :
 
-While  `ArrayBuffer`,  `Uint8Array`  and other  `BufferSource`  are “binary data”, a  Blob represents “binary data with type”.
+While  `ArrayBuffer`,  `Uint8Array`  and other  `BufferSource`  are Â“binary dataÂ”, a  Blob represents Â“binary data with typeÂ”.
 
 That makes Blobs convenient for upload/download operations, that are so common in the browser,can work with  `Blob`  natively, as well as with other binary types.
 
@@ -80,7 +80,7 @@ We can easily convert between  `Blob`  and low-level binary data types:
 -   We can make a  `Blob`  from a typed array using  `new Blob(...)`  constructor.
 -   We can get back  `ArrayBuffer`  from a Blob using  `blob.arrayBuffer()`, and then create a view over it for low-level binary processing.
 
-Conversion streams are very useful when we need to handle large blob. You can easily create a  `ReadableStream`  from a blob. The  `Blob`  interface’s  `stream()`  method returns a  `ReadableStream`  which upon reading returns the data contained within the blob.
+Conversion streams are very useful when we need to handle large blob. You can easily create a  `ReadableStream`  from a blob. The  `Blob`  interfaceÂ’s  `stream()`  method returns a  `ReadableStream`  which upon reading returns the data contained within the blob.
 
 **Finaly**,  
 saveFile(blob, fileName) method : We are installing **npm i file-saver** for application angular. after install use  import { saveAs } from 'file-saver'.blobContent file content as a Blob and fileName name file should be saved as.
