@@ -42,7 +42,7 @@ What is the confirm component and why it use ?
 The confirm component is show notification above have the message "Are you sure....?" and we always chocies 2 answers yes or no. Should use to help us confirm answers.
 
 What is the loading component and why it use ?
-The loading component after submitting the handle event shows the loading. It helps no multiple clicks and not  double data. 
+The loading component after submitting the handle event shows the loading. It not allow multiple clicks and can double data. 
 
 
 ## Download Service
