@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DownloadService } from 'src/app/_services/download.service';
 import { first } from 'rxjs/operators';
 import { MatDialog } from '@angular/material';
-import { ConfirmComponent } from 'src/app/_components/_comfirm/comfirm.component';
+import { ConfirmComponent } from 'src/app/_components/_confirm/confirm.component';
 import { AlertService } from 'src/app/_services/alert.service';
 import { DownLoad } from 'src/app/_models/download.model';
 

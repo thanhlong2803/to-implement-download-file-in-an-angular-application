@@ -7,7 +7,7 @@ import { DownLoadPageComponent } from './home/download-page/download-page.compon
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material';
-import { ConfirmComponent } from './_components/_comfirm/comfirm.component';
+import { ConfirmComponent } from './_components/_confirm/confirm.component';
 import { LoadingComponent } from './_components/_loading/loading.component';
 import { AlertComponent } from './_components/_alert/alert.component';
 
