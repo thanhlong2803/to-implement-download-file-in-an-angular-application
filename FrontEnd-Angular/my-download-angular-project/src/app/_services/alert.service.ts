@@ -37,30 +37,13 @@ export class AlertService {
     }
 
     success(message: string, keepAfterRouteChange = false) {
-        this.showMessage(message, keepAfterRouteChange);
+        this.keepAfterRouteChange = keepAfterRouteChange;
+        this.subject.next({ type: 'success', text: message });
     }
 
     error(message: string, keepAfterRouteChange = false) {
-        this.showMessage(message, keepAfterRouteChange);
-    }
-
-    warning(message: string, keepAfterRouteChange = false) {
-        this.showMessage(message, keepAfterRouteChange);
-    }
-
-    showMessage(message: string, keepAfterRouteChange = false) {
         this.keepAfterRouteChange = keepAfterRouteChange;
-        switch (message) {
-            case ShowMessage.Success:
-                this.subject.next({ type: ShowMessage.Success, text: message });
-                break;
-            case ShowMessage.Error:
-                this.subject.next({ type: ShowMessage.Error, text: message });
-                break;
-            default:
-                this.subject.next({ type: ShowMessage.Warning, text: message });
-                break;
-        }
+        this.subject.next({ type: 'error', text: message });
     }
 
     clear() {

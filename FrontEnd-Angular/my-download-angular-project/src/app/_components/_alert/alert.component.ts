@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { AlertService } from '../_services/alert.service';
+import { AlertService } from 'src/app/_services/alert.service';
+
 
 @Component(
     {
@@ -12,13 +13,15 @@ export class AlertComponent implements OnInit, OnDestroy {
     private subscription: Subscription;
     message: any;
 
-    constructor(private alertService: AlertService) { }
+    constructor(private alertService: AlertService) {
+
+    }
 
     ngOnInit() {
-       //getAlert() passed signal this.subject.asObservable() 
-       //so per change it will subscription save to memory..... esay => memory leaks
+        //getAlert() passed signal this.subject.asObservable() 
+        //so per change it will subscription save to memory..... esay => memory leaks
         this.subscription = this.alertService.getAlert()
-            .subscribe(message => {
+            .subscribe(message => {               
                 switch (message && message.type) {
                     case 'success':
                         message.cssClass = 'alert alert-success';
@@ -30,7 +33,6 @@ export class AlertComponent implements OnInit, OnDestroy {
                         message.cssClass = 'alert alert-danger';
                         break;
                 }
-
                 this.message = message;
             });
     }

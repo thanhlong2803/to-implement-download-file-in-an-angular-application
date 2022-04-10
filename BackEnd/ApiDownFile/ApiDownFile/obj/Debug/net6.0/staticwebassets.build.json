@@ -1,11 +1,54 @@
 {
   "Version": 1,
-  "Hash": "//TEBCDGeGn5QCwfvpEIlQnivEJwN/mjNbye3oIR5qQ=",
+  "Hash": "Dwx/dBvKmiHW9upWji3+pfccA7k4vneqCRM2cxNfg1E=",
   "Source": "ApiDownFile",
   "BasePath": "_content/ApiDownFile",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "ApiDownFile\\wwwroot",
+      "Source": "ApiDownFile",
+      "ContentRoot": "D:\\LearnAngular\\v1-download-many-file-in-angular\\BackEnd\\ApiDownFile\\ApiDownFile\\wwwroot\\",
+      "BasePath": "_content/ApiDownFile",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\LearnAngular\\v1-download-many-file-in-angular\\BackEnd\\ApiDownFile\\ApiDownFile\\wwwroot\\Files\\ExcelFile.xlsx",
+      "SourceId": "ApiDownFile",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\LearnAngular\\v1-download-many-file-in-angular\\BackEnd\\ApiDownFile\\ApiDownFile\\wwwroot\\",
+      "BasePath": "_content/ApiDownFile",
+      "RelativePath": "Files/ExcelFile.xlsx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Files\\ExcelFile.xlsx"
+    },
+    {
+      "Identity": "D:\\LearnAngular\\v1-download-many-file-in-angular\\BackEnd\\ApiDownFile\\ApiDownFile\\wwwroot\\Files\\PDFFile.pdf",
+      "SourceId": "ApiDownFile",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\LearnAngular\\v1-download-many-file-in-angular\\BackEnd\\ApiDownFile\\ApiDownFile\\wwwroot\\",
+      "BasePath": "_content/ApiDownFile",
+      "RelativePath": "Files/PDFFile.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Files\\PDFFile.pdf"
+    }
+  ]
 }

@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace ApiDownFile.Controllers
 {
@@ -6,28 +6,36 @@ namespace ApiDownFile.Controllers
     [Route("[controller]")]
     public class DownloadFileController : ControllerBase
     {
+        public DownloadFileController()
+        {
+        }
+
         private List<DownloadFile> DownloadFiles()
         {
             var downfiles = new List<DownloadFile>()
             {
-                new DownloadFile() { Id = 1, Name = "filePDF" , Extension = "pdf"},
-                new DownloadFile() { Id = 2, Name = "ExcelFile" , Extension = "xlsx"}
+                new DownloadFile() { Id = 1, Name = "PDFFile" , Extension = ".pdf" , Type ="application/pdf"},
+                new DownloadFile() { Id = 2, Name = "ExcelFile" , Extension = ".xlsx" , Type="application/vnd.ms-excel"}
             };
 
             return downfiles;
         }
 
-        private readonly ILogger<DownloadFileController> _logger;
-
-        public DownloadFileController(ILogger<DownloadFileController> logger)
+        [HttpGet(Name = "GetDownloadFile")]
+        public ActionResult<IEnumerable<DownloadFile>> Get()
         {
-            _logger = logger;
+            return Ok(DownloadFiles());
         }
 
-        [HttpGet(Name = "GetDownloadFile")]
-        public IEnumerable<DownloadFile> Get()
+
+        [HttpPost("DownloadFiles")]
+        public ActionResult DownloadFiles(DownloadFile downloadFile)
         {
-            return DownloadFiles();
+            var myfile = System.IO.File.ReadAllBytes("wwwroot/Files/" + downloadFile.Name + downloadFile.Extension);
+            HttpContext.Response.Headers.Add("content-disposition", $"attachment; filename={downloadFile.Extension}" + DateTime.Now.Year + downloadFile.Extension);
+            Response.ContentType = downloadFile.Type;
+
+            return new FileContentResult(myfile, downloadFile.Type);
         }
 
     }

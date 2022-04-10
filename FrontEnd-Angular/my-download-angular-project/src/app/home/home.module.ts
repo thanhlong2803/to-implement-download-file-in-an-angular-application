@@ -9,6 +9,7 @@ import { DownLoadPageComponent } from './download-page/download-page.component';
   imports: [
     CommonModule,
     HomeRoutingModule
-  ]
+  ],
+  
 })
 export class HomeModule { }

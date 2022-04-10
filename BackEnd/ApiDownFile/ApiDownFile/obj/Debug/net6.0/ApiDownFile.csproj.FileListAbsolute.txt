@@ -25,3 +25,4 @@ D:\LearnAngular\v1-download-many-file-in-angular\BackEnd\ApiDownFile\ApiDownFile
 D:\LearnAngular\v1-download-many-file-in-angular\BackEnd\ApiDownFile\ApiDownFile\obj\Debug\net6.0\ApiDownFile.pdb
 D:\LearnAngular\v1-download-many-file-in-angular\BackEnd\ApiDownFile\ApiDownFile\obj\Debug\net6.0\ApiDownFile.genruntimeconfig.cache
 D:\LearnAngular\v1-download-many-file-in-angular\BackEnd\ApiDownFile\ApiDownFile\obj\Debug\net6.0\ref\ApiDownFile.dll
+D:\LearnAngular\v1-download-many-file-in-angular\BackEnd\ApiDownFile\ApiDownFile\bin\Debug\net6.0\ApiDownFile.staticwebassets.runtime.json

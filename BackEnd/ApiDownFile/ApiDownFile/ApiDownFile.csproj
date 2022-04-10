@@ -10,4 +10,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\Files\ExcelFile.xlsx" />
+    <None Include="wwwroot\Files\PDFFile.pdf" />
+  </ItemGroup>
+
 </Project>

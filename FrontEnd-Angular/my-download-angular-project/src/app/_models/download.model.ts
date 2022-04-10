@@ -1,5 +1,9 @@
-class DownLoad {
-    public Id: number;
-    public Name: string;
-    public Extension: string;
+
+export class DownLoad {
+	constructor(
+        public id: number = null,
+        public name: string = null,
+        public extension: string = null,
+        public type : string = null		
+	) { }
 }
