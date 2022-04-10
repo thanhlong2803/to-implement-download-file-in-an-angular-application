@@ -1,6 +1,6 @@
 
 
-# Download-many-file-in-angular
+# Download File In Angular
 Angular - Download many file in angular Example
 
  - **The project** and **structure** of the example mostly follows the best practice and improve codes.
