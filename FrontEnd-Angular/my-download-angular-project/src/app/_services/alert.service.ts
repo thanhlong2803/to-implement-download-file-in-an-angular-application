@@ -9,9 +9,10 @@ export class AlertService {
     private keepAfterRouteChange = false;
 
     //Question: What is variable keepAfterRouteChange and when use it will?
-    //Answer: keepAfterRouteChange is created to check 
-    //when show displaying message for current page (keepAfterRouteChange = true) only keep for single route change
-    // or clear message (keepAfterRouteChange=false)
+    //Answer: keepAfterRouteChange is created to check change message notification.
+    //when show displaying message for current page (keepAfterRouteChange = true)
+    // only keep for single route change
+    // or clear message (keepAfterRouteChange = false)
 
     constructor(private router: Router) {
         this.router.events.subscribe(event => {
@@ -27,12 +28,12 @@ export class AlertService {
 
     //Question: What is Observable and why use it will? 
     //Answer: getAlert() method is created let return observable.    
-    //observable is created to check the stream when data change. By observable, 
-    //the same as subscribing when wherever a change message is received from the subject.next() 
-    //passed signal this.subject.asObservable() change  the follow.
-    
+    //By observable is created to check the stream when data change the same as 
+    //subscribing when wherever a change message is received from the subject.next() 
+    //passed signal this.subject.asObservable()change message the follow.
+
     getAlert(): Observable<any> {
-        return this.subject.asObservable(); 
+        return this.subject.asObservable();
     }
 
     success(message: string, keepAfterRouteChange = false) {
