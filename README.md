@@ -1,7 +1,7 @@
 
 
-# Download files in angular
-Angular - Download many file in angular Example
+# Download files inangular
+Angular - Download files in angular Example.
 
  - **The project** and **structure** of the example mostly follows the best practice and improve codes.
  - **The project** structure has a folder per feature (Page Home within one button download file) while order share / common code (**services, models, content, components & helpers**) is placed in forder let easy build or hande **Design Pattern**. 
@@ -19,9 +19,8 @@ The alert component template contains the HTML for displaying the alert message 
 
 ***Path: /src/app/_components/alert.component.ts***
 The alert component passes alert messages to the template whenever a message is received from the alert service. It does this by subscribing to the alert services getMessage()  method which return an observable.
-  ![enter image description here](https://lh3.googleusercontent.com/rrV52ZcSPMC1R0XkNwCiNCNERfzn40F6zuZjWwJyMKPh_Sjae_gQ7owa9LflIGWgChlHBOo-FubcSeA0lHYT1irVG5KXJyE86ZmHQD5M2CRuZPAGgcN4vP1pWKvwma1gI2fWvkNTh622d10KJKB98JlqC38U141Xy7xG0cNWvJ3IFZgE5R6Ahoq_VZDrpFQuo8kwZYm6zkC6tMfHgz5Uidqj6ZETYrPc6jXwnNwmTx_Xra-zg9r0i0WidxM0leBTrPjE0zTnTRXz6J11YeE2HFLaM0Mfji4VEjqg_IohK0-xrNnNc2MWD46wZKk86LM57fNwAhzJ_sNT_PEjCitfnHJFruA3OHgzydQdZM78B2K7XlNq_MLEVFMN5blzKIP90qWdnUlhwIIVAIS8HpiAN8Orpb6-w2pUgN7XF8K0qiih6YFiufeDNspupPZre854Ipv80_eDQo5AsXWTLLIq9ElqelX_AkKG41Mu7R24rosFYRWjSl9YUkHAoYqr0cRYDCpB0_5fipjo_6MJdRLJ2MIUKWrVk_Z75ovnMGGg9Tn94PnsckKSggWESoa5t4o-WOMFb32rmoXnRf0frcKDS_S_0T4-_FBe4eI-jEbSva3dfYLSllXUEJ9t8OGPvsgxb_HiKmhTIMeB6xBBhs5HYPV-wBPurxePyRnHs5pj4RrPCdw9XBE_6tmTv9C_6lHi24NOK1_Io_oHQsapDP211oMrIDgH3PsCISrWnJI56CMsdI3tzCcFlqE7cs3_Rw=w1214-h1142-no?authuser=0%22%29,%20url%28%22https://lh3.googleusercontent.com/rrV52ZcSPMC1R0XkNwCiNCNERfzn40F6zuZjWwJyMKPh_Sjae_gQ7owa9LflIGWgChlHBOo-FubcSeA0lHYT1irVG5KXJyE86ZmHQD5M2CRuZPAGgcN4vP1pWKvwma1gI2fWvkNTh622d10KJKB98JlqC38U141Xy7xG0cNWvJ3IFZgE5R6Ahoq_VZDrpFQuo8kwZYm6zkC6tMfHgz5Uidqj6ZETYrPc6jXwnNwmTx_Xra-zg9r0i0WidxM0leBTrPjE0zTnTRXz6J11YeE2HFLaM0Mfji4VEjqg_IohK0-xrNnNc2MWD46wZKk86LM57fNwAhzJ_sNT_PEjCitfnHJFruA3OHgzydQdZM78B2K7XlNq_MLEVFMN5blzKIP90qWdnUlhwIIVAIS8HpiAN8Orpb6-w2pUgN7XF8K0qiih6YFiufeDNspupPZre854Ipv80_eDQo5AsXWTLLIq9ElqelX_AkKG41Mu7R24rosFYRWjSl9YUkHAoYqr0cRYDCpB0_5fipjo_6MJdRLJ2MIUKWrVk_Z75ovnMGGg9Tn94PnsckKSggWESoa5t4o-WOMFb32rmoXnRf0frcKDS_S_0T4-_FBe4eI-jEbSva3dfYLSllXUEJ9t8OGPvsgxb_HiKmhTIMeB6xBBhs5HYPV-wBPurxePyRnHs5pj4RrPCdw9XBE_6tmTv9C_6lHi24NOK1_Io_oHQsapDP211oMrIDgH3PsCISrWnJI56CMsdI3tzCcFlqE7cs3_Rw=w327-h308-no?authuser=0)
-    
-
+  
+  ![enter image description here](https://lh3.googleusercontent.com/49O8bAZWxM0wFKtE-xtjjhfKXm31LUI9xRQUD5HHQrkO41aoV7jEnDOYwdMGvh7w4EDIOauTVtdO6F-gkC3NohIS2YZiLiG84epy0m8Hd979WK3-lZXWgDwslIN0a5l5GxYOWQKlaFHabjRGsocbdindbM05rByudPcPwFi1WMg-SdlU0o2rJRoSIJnh2Dk4IyGupvrk2SgOER7PHfYLrz0B_E_3_kB8Xpgk15togQSjbrI5EgZ-_FL-BvxPh61oHUWWqFZewfCVJe9ZKRbElM-vNNDySqJVft3YUWUyXlAXpwFmVyy5XWrIX8IypZ0tZvnHHzHNKqjQ8WDzTInqpUwT0vEKJYMAwwW-vRuTE0O4eOPeFv_9Cu7fFkfG7U0yz6bVBMGVAH8LkbL6Wpq0P9T-OUGn4_x5-F25kEyYJBE_4-8unxkIO6Qw_oOfTTEWtylllKvtPmTHpmhhuhJpJFdqPAI8tJI92LlKqi7-EDSAqRJoEuXlW3RTfd2Oe1ra-DM6a3vRT6zIC7UPqSQN2mOOJtmW3cYWu9BewSGJUygFoxsEU28XI9qs0h86qGzPPFULEECJJyKhLCJgqceCtcrdv9hEHZV-LiUpKe5TYpSVILM2gzI8D5VE4EvFAuDjPwZBidFuIwlNzIYlbSBajYUL9L6WY9kRapNn9AJdJwXc1PKeNJHiUGrZbYIoD0bDRR_ursUUvGzaGs_oAW4FKTDn507-Q4xUZMQTXVMVhamvHkxjfJgEeSahTXQJlw=w648-h384-no?authuser=0)
 ***Path: /src/app/_service/alert.service.ts***
 The alert service allows a show display results of success and  
 waring. It can show allow designed page html (show on top and show on the bottom and left, right).
@@ -71,7 +70,7 @@ The user service contains a standard set of (**getAllFile() and download()**) me
 
 **Blob** :
 
-While  `ArrayBuffer`,  `Uint8Array`  and other  `BufferSource`  are binary data, a  Blob represents binary data with type.
+While  `ArrayBuffer`,  `Uint8Array`  and other  `BufferSource`  are “binary data”, a  Blob represents “binary data with type”.
 
 That makes Blobs convenient for upload/download operations, that are so common in the browser,can work with  `Blob`  natively, as well as with other binary types.
 
@@ -80,7 +79,7 @@ We can easily convert between  `Blob`  and low-level binary data types:
 -   We can make a  `Blob`  from a typed array using  `new Blob(...)`  constructor.
 -   We can get back  `ArrayBuffer`  from a Blob using  `blob.arrayBuffer()`, and then create a view over it for low-level binary processing.
 
-Conversion streams are very useful when we need to handle large blob. You can easily create a  `ReadableStream`  from a blob. The  `Blob`  interfaces  `stream()`  method returns a  `ReadableStream`  which upon reading returns the data contained within the blob.
+Conversion streams are very useful when we need to handle large blob. You can easily create a  `ReadableStream`  from a blob. The  `Blob`  interface’s  `stream()`  method returns a  `ReadableStream`  which upon reading returns the data contained within the blob.
 
 **Finaly**,  
 saveFile(blob, fileName) method : We are installing **npm i file-saver** for application angular. after install use  import { saveAs } from 'file-saver'.blobContent file content as a Blob and fileName name file should be saved as.
