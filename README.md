@@ -1,6 +1,6 @@
 
 
-# Download files inangular
+# Download files in angular
 Angular - Download files in angular Example.
 
  - **The project** and **structure** of the example mostly follows the best practice and improve codes.
