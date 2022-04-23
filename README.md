@@ -1,7 +1,7 @@
 
 
 # Download files in angular
-Angular - Download files in angular Example.
+Angular 8 - Download files in angular Example.
 
  - **The project** and **structure** of the example mostly follows the best practice and improve codes.
  - **The project** structure has a folder per feature (Page Home within one button download file) while order share / common code (**services, models, content, components & helpers**) is placed in forder let easy build or hande **Design Pattern**. 
